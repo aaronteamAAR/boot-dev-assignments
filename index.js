@@ -97,3 +97,26 @@ if(i % 2 !== 0){
 }
 
 console.log(oddNumbers)
+
+
+// Let's get back to working on "Fantasy Quest"!
+
+// We need to make a way to easily check if an item exists within our inventory!
+
+// Complete the stringExists function that checks if a given string can be found within an array.
+
+
+function stringExists(stringToCheck, stringArray) {
+    for (let i = 0 ; i < stringArray.length; i++) {
+      if (stringToCheck == stringArray[i]) {
+        return true
+      }
+    }
+    return false
+  }
+  
+  console.log(stringExists('Healing Potion', [ 'Iron Bar', 'Leather Scraps', 'Shortsword' ]))
+  console.log(stringExists('Iron Helmet', [ 'Buckler', 'Leather Armor Kit', 'Iron Breastplate' ]))
+  console.log(stringExists('Iron Ore', [ 'Healing Potion', 'Iron Ore', 'Cheese' ]))
+  console.log(stringExists('Shortsword', [ 'Potion', 'Iron Breastplate', 'Shortsword' ]))
+  
