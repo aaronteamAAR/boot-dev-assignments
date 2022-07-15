@@ -77,3 +77,23 @@ for (let wood of woods){
 // oak
 // pine
 // maple
+
+
+
+
+
+
+
+
+// Exercise 14 of 14
+// Create Array of Odd Numbers
+
+
+let oddNumbers = []
+
+for (let i = 0; i < 300; i++) {
+if(i % 2 !== 0){
+   oddNumbers.push(i)}
+}
+
+console.log(oddNumbers)
