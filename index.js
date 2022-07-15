@@ -16,8 +16,11 @@ playersId = [
 ]
 console.log( playersId.IndexOf("0-33"))
 // Pushing value into an array with a loop
-for(let  i = 0; i < playersId.length; i++ ){
+let playerIds = []
+for (let i = 0; i < 100; i++) {
+  playerIds.push(i)
 }
+console.log(playerIds)
 
 // Array Updates
 
