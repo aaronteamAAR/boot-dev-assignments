@@ -30,3 +30,12 @@ console.log(inventory)
 // update second item here
 
 console.log(inventory)
+
+// Pop Values
+
+let inventory = [ 'Healing Potion', 'Iron Bar', 'Kite Shield', 'Shortsword', 'Leather Scraps', 'Tattered Cloth' ]
+for (let i = inventory.length - 1; i >= 0; i--) {
+  let item = inventory.pop() 
+  console.log('Selling:', item)
+}
+console.log(inventory)
