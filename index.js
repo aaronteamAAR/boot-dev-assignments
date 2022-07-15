@@ -39,3 +39,41 @@ for (let i = inventory.length - 1; i >= 0; i--) {
   console.log('Selling:', item)
 }
 console.log(inventory)
+
+
+// COUNTING
+let items = [ 'Potion', 'Healing Potion', 'Iron Breastplate', 'Leather Scraps', 'Iron Ore', 'Light Leather', 'Bread', 'Shortsword', 'Longsword', 'Iron Mace', 'Gold Ore', 'Bread', 'Healing Potion', 'Silk Cloth', 'Bread',  'Leather Armor Kit', 'Bread', 'Iron Boots', 'Iron Bar', 'Potion', 'Iron Breastplate', 'Leather Scraps', 'Iron Ore', 'Light Leather', 'Bread', 'Shortsword', 'Longsword', 'Iron Mace', 'Gold Ore', 'Healing Potion', 'Silk Cloth', 'Leather Armor Kit', 'Iron Boots', 'Iron Bar', 'Iron Mace', 'Gold Ore', 'Healing Potion', 'Silk Cloth', 'Leather Armor Kit', 'Iron Boots', 'Iron Bar', 'Potion', 'Iron Breastplate', 'Leather Scraps', 'Iron Ore', 'Light Leather', 'Potion', 'Iron Breastplate', 'Leather Scraps', 'Iron Ore', 'Light Leather', 'Bread', 'Shortsword', 'Longsword', 'Iron Mace', 'Gold Ore', 'Healing Potion', 'Silk Cloth', 'Leather Armor Kit', 'Iron Boots', 'Iron Bar' ]
+
+let potionCount = 0
+let breadCount = 0
+let shortswordCount = 0
+
+for (let i = 0; i < items.length; i++) {
+  if (items[i] == 'Potion') {
+    potionCount++
+  } else if (items[i] == 'Bread') {
+    breadCount++
+  } else if (items[i] == 'Shortsword') {
+    shortswordCount++
+    
+  }
+}
+
+// Don't touch below this line
+
+console.log(`You have ${potionCount} potions in your inventory.`)
+console.log(`You have ${breadCount} pieces of Bread in your inventory.`)
+console.log(`You have ${shortswordCount} shortswords in your inventory.`)
+
+
+
+// For-Of Syntax
+
+let woods = ['oak', 'pine', 'maple']
+for (let wood of woods){
+  console.log(wood)
+}
+// prints:
+// oak
+// pine
+// maple
