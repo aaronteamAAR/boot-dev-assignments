@@ -120,3 +120,8 @@ function stringExists(stringToCheck, stringArray) {
   console.log(stringExists('Iron Ore', [ 'Healing Potion', 'Iron Ore', 'Cheese' ]))
   console.log(stringExists('Shortsword', [ 'Potion', 'Iron Breastplate', 'Shortsword' ]))
   
+
+
+
+//   Objects
+
